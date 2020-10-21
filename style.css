@@ -1,0 +1,21 @@
+.toggle{
+    color:gray;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+body{
+    background-image: url('/assets/todolist2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

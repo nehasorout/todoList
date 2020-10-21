@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center" class="mt-2"><u>ToDo LIST</u></h1>
+    <div class="container mt-3">
+        <marquee style="font-weight: bold;color: yellow;">A basic JavaScript project to show the DOM manipulation and event handling(in jQuery).</marquee>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="inptask"><b>ToDo Task:</b></label>
+                            <input type="text" class="form-control bg-transparent border border-primary" id="inptask" aria-describedby="emailHelp" placeholder="Enter your tasks here" required>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your task with anyone else.</small> -->
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="inpdatetime"><b>Date and Time for the task:</b></label>
+                            <input type="datetime-local" class="form-control bg-transparent border border-primary" id="inpdatetime" aria-describedby="emailHelp" placeholder="Enter your tasks here" required>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your task with anyone else.</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="row mt-5 ml-2 mr-2">
+                    <button class="btn btn-success col-6" id="btnadd"><i class="fa fa-plus"></i><b> ADD</b></button>
+                    <button class="btn btn-danger col-6" id="btndelete"><i class="fa fa-trash"></i><b> DELETE LIST</b></button>
+                    <button class="btn btn-warning col-6" id="btnsort"><i class="fa fa-sort"></i><b> SORT</b></button>
+                    <button class="btn btn-primary col-6" id="btnreset"><i class="fa fa-eraser"></i><b> RESET INPUT</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 align="center" class="mt-4"><u>TASKS WILL BE LISTED HERE</u></h2>
+    <div class="container mt-4">
+        <marquee style="font-weight: bold;color: yellow;">Click on the list item to mark it as done!!</marquee>
+        <ul class="list-group" id="ultasks">
+            <!-- <li class="list-group-item">Cras justo odio</li> -->
+          </ul>
+    </div>
+</body>
+</html>
